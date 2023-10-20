@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterFragment">
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <TextView
+            android:id="@+id/txt_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:text="Register"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_name"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/txt_login"
+            android:layout_centerHorizontal="true"
+            app:cardCornerRadius="30dp"
+            android:layout_marginTop="35dp">
+
+            <EditText
+                android:id="@+id/edt_username"
+                android:layout_width="310dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/txt_login"
+                android:layout_centerHorizontal="true"
+                android:hint="Username"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:layout_marginHorizontal="20dp"
+                android:drawablePadding="8dp">
+            </EditText>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_email"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/card_name"
+            android:layout_centerHorizontal="true"
+            app:cardCornerRadius="30dp"
+            android:layout_marginTop="20dp">
+
+            <EditText
+                android:id="@+id/edt_email"
+                android:layout_width="310dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/txt_login"
+                android:layout_centerHorizontal="true"
+                android:hint="Email"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:layout_marginHorizontal="20dp"
+                android:drawablePadding="8dp">
+            </EditText>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_password"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/card_email"
+            android:layout_centerHorizontal="true"
+            app:cardCornerRadius="30dp"
+            android:layout_marginTop="20dp">
+
+            <EditText
+                android:id="@+id/edt_password"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:layout_width="310dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/txt_name"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:layout_marginHorizontal="20dp"
+                android:drawablePadding="8dp">
+            </EditText>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/forgotpsw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/card_password"
+            android:layout_marginLeft="250dp"
+            android:text="Forgot password?"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:text="Register"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/card_password"
+            android:layout_marginTop="50dp"
+            android:textSize="20sp"
+            tools:ignore="RtHardcoded"/>
+    </RelativeLayout>
+</FrameLayout>
