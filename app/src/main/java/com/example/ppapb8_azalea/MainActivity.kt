@@ -26,18 +26,5 @@ class MainActivity : AppCompatActivity() {
         menuInflater.inflate(R.menu.menu_option, menu)
         return true
     }
-//    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-//        return when (item.itemId) {
-//            R.id.action_home -> {
-//                Toast.makeText(this, "Home", Toast.LENGTH_SHORT).show()
-//                true
-//            }
-//            R.id.action_materi -> {
-//                Toast.makeText(this, "Materi", Toast.LENGTH_SHORT).show()
-//                true
-//            }
-//            else -> super.onOptionsItemSelected(item)
-//        }
-//    }
 
 }
